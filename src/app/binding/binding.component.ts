@@ -1,11 +1,11 @@
-import { Component, Input, OnChanges, OnInit, SimpleChange } from '@angular/core';
+import { Component, Input, OnInit, SimpleChange } from '@angular/core';
 
 @Component({
   selector: 'app-binding',
   templateUrl: './binding.component.html',
   styleUrls: ['./binding.component.scss']
 })
-export class BindingComponent implements OnInit , OnChanges {
+export class BindingComponent implements OnInit {
 @Input() myInput: any;
 toggle:boolean = false;
  val:any = 'text'
@@ -21,7 +21,7 @@ get value(){
     console.log('myInput',this.myInput)
   }
 
-  ngOnChanges(){
-    
+  ngOnChanges(changes:SimpleChange){
+    console.log('changes',changes)
   }
 }
