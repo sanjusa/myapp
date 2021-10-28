@@ -22,6 +22,6 @@ get value(){
   }
 
   ngOnChanges(changes:SimpleChange){
-    console.log('changes',changes, 'my name is sanjay')
+    //console.log('changes',changes, 'my name is sanjay')
   }
 }
