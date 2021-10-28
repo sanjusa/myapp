@@ -7,6 +7,7 @@ import { Component, Input, OnInit, SimpleChange } from '@angular/core';
 })
 export class BindingComponent implements OnInit {
 @Input() myInput: any;
+obj = {}
 toggle:boolean = false;
  val:any = 'text'
   constructor() { }
