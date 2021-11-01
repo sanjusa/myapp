@@ -11,7 +11,7 @@ import { ModalComponent } from './modal/modal.component';
 export class AppComponent {
   titl = 'myapp';
   version = VERSION.major;
-  myObser = new BehaviorSubject(true)
+  myObserrrr = new BehaviorSubject(true)
   @ViewChild('container',{read:ViewContainerRef}) container! : ViewContainerRef;
   @ViewChild(ModalComponent) modal!: ModalComponent ;
   constructor(public componentFactorResolver:ComponentFactoryResolver){}
