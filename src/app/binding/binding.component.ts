@@ -7,7 +7,7 @@ import { Component, Input, OnInit, SimpleChange } from '@angular/core';
 })
 export class BindingComponent implements OnInit {
 @Input() myInput: any;
-gitTest:any;
+obj = {}
 toggle:boolean = false;
  val:any = 'text'
   constructor() { }
@@ -23,6 +23,6 @@ get value(){
   }
 
   ngOnChanges(changes:SimpleChange){
-    console.log('changes',changes)
+    //console.log('changes',changes, 'my name is sanjay')
   }
 }
